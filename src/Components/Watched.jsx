@@ -1,7 +1,7 @@
 import React from 'react';
-import "./Recomend.css";
+import "./Movie.css";
 
-class Recommends extends React.Component {
+class Watched extends React.Component {
    render() {
        const {title, image, Year} = this.props;
 
@@ -13,11 +13,11 @@ class Recommends extends React.Component {
                </div>
                <div className="poster">
                    <img style={{height: '200px', width: '100px' }} src={image} alt="my movie poster"/>
-                   <button>Add to Watched</button>
+                   <button>Add to Liked</button>
                </div>
            </div>
        )
    }
 }
 
-export default Recommends;
+export default Watched;
